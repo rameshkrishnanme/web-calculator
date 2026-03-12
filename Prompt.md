@@ -16,6 +16,9 @@ Here is a log of all the prompts you provided during this session to generate th
 |  10  | **Meta**      | `remove continue work in prompt.md` |
 |  11  | **Meta**      | `Remove CSS in prompt.md and apply nice UI using standard md formating` |
 |  12  | **Meta**      | `Prompt.md looks plain, anything colorful` |
+|  13  | **DevOps**    | `add Dockerfile and helm chart to deploy in google cloud` |
+|  14  | **DevOps**    | `please hpa in helm chart with default replicas as 2` |
+|  15  | **Meta**      | `please keep prompt.md uptodate` |
 
 <br>
 
