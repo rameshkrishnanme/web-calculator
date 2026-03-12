@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Test addition",
+    "steps": ["Click 1", "Click +", "Click 2", "Click ="],
+    "expected_result": "3"
+  },
+  {
+    "name": "Test subtraction",
+    "steps": ["Click AC", "Click 9", "Click -", "Click 4", "Click ="],
+    "expected_result": "5"
+  },
+  {
+    "name": "Test multiplication",
+    "steps": ["Click AC", "Click 6", "Click ×", "Click 7", "Click ="],
+    "expected_result": "42"
+  },
+  {
+    "name": "Test division",
+    "steps": ["Click AC", "Click 8", "Click ÷", "Click 2", "Click ="],
+    "expected_result": "4"
+  },
+  {
+    "name": "Test decimals",
+    "steps": ["Click AC", "Click 1", "Click .", "Click 5", "Click +", "Click 2", "Click .", "Click 5", "Click ="],
+    "expected_result": "4"
+  },
+  {
+    "name": "Test deletion",
+    "steps": ["Click AC", "Click 1", "Click 2", "Click 3", "Click DEL"],
+    "expected_result": "12"
+  }
+]
