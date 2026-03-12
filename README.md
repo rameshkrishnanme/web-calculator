@@ -85,6 +85,14 @@ To run the automated Puppeteer tests using the scenarios above:
 npm test
 ```
 
+### Run with Docker Compose
+
+For a quick local deployment, you can use Docker Compose:
+```bash
+docker-compose up -d
+```
+The application will be available at `http://localhost:3000`.
+
 ### Manual Test Scenarios
 
 1.  **Test addition**

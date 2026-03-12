@@ -19,6 +19,7 @@ Here is a log of all the prompts you provided during this session to generate th
 |  13  | **DevOps**    | `add Dockerfile and helm chart to deploy in google cloud` |
 |  14  | **DevOps**    | `please hpa in helm chart with default replicas as 2` |
 |  15  | **Meta**      | `please keep prompt.md uptodate` |
+|  16  | **DevOps**    | `Please add docker compose for quick run` |
 
 <br>
 
