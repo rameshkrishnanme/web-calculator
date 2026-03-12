@@ -47,6 +47,37 @@ Below are the manual test scenarios to verify the application's arithmetic logic
 > [!TIP]
 > These steps are also saved programmatically in `tests/test_cases.json` if you wish to run them using an automated browser testing framework (e.g., Puppeteer, Playwright, Cypress) in the future.
 
+## Deployment (Google Cloud / GKE)
+
+This project includes a `Dockerfile` and a `helm/` directory to facilitate deployment to Google Cloud (Google Kubernetes Engine or Cloud Run).
+
+### 1. Build and Push the Docker Image
+
+```bash
+# Configure Docker to authenticate with Google Artifact Registry
+gcloud auth configure-docker us-central1-docker.pkg.dev
+
+# Build the image
+docker build -t us-central1-docker.pkg.dev/YOUR_PROJECT_ID/YOUR_REPO_NAME/web-calculator:latest .
+
+# Push the image
+docker push us-central1-docker.pkg.dev/YOUR_PROJECT_ID/YOUR_REPO_NAME/web-calculator:latest
+```
+
+### 2. Deploy using Helm to GKE
+
+Ensure you are connected to your GKE cluster:
+```bash
+gcloud container clusters get-credentials YOUR_CLUSTER_NAME --region YOUR_REGION --project YOUR_PROJECT_ID
+```
+
+Update the `helm/values.yaml` file to point to your new image repository. Then deploy:
+```bash
+helm install web-calculator ./helm
+```
+
+This will spin up a Deployment, a ClusterIP Service, and a Google Cloud Load Balancer (via the Ingress template) to serve your application.
+
 ### Automated Testing
 
 To run the automated Puppeteer tests using the scenarios above:
