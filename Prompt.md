@@ -1,4 +1,4 @@
-# 🎨 User Prompts Journey
+# User Prompts Journey
 
 Here is a log of all the prompts you provided during this session to generate the web-based calculator project. I've used standard markdown to make it colorful and structured!
 
